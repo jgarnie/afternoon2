@@ -1,4 +1,52 @@
-class item {
+
+
+'use strict'
+class bus{
+  constructor(direction,station, seats, passengers) {
+    this.direction = direction;
+    this.station = station;
+    this.seats = seats;
+    this.passengers = passengers;
+    this.last_station =  this.station.lenght-1;
+  }
+  
+  current = () =>{
+    return `${this.station[i]}`;
+  }
+  next = () =>{
+    let i = 0;
+    return `${this.station[i+1]}`;
+  }
+  board = (count) =>{
+    if(this.passengers+count <= this.seats){
+      return `${this.passengers + count}`;
+    }
+  }
+}
+
+
+
+const  buses = [
+  new bus('Prague', ['praha', 'jhilava','brno','breclav','viden'], 50, 40),
+
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*class item {
   constructor(name, price, quantity) {
     this.name = name;
     this.price = price;
